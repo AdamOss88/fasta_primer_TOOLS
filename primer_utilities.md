@@ -50,8 +50,9 @@ return(export)
 ```
 
 ```{r propagate}
+###start function
 degenerateme <- function(input){ 
-require(seqinr)
+
 for (pos in 1:length(input)) {
 deg_primer <- input[pos]
 deg_primer[[1]] <- toupper(deg_primer[[1]])
